@@ -21,7 +21,6 @@ var strings = {
    unknown_error: function (message) { return 'Unknown Error: ' + message; }
 }
 
-// route for `endpoint` (send JSON with key `id`).
 app.get('/511', function* (next) {
    this.status = 511;
    yield next;
