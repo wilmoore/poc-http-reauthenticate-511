@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <h1>Status</h1>
+
+    <form action="">
+      <textarea cols="40" id="status"></textarea>
+    </form>
+
+    <script>
+    var request = new XMLHttpRequest();
+
+    request.onload = function success(tst, err) {
+      document.getElementById('status').value = request.statusText;
+    };
+    request.open('GET', 'http://127.0.0.1:3002/511', true);
+    request.send();
+
+    // return request;
+    </script>
+  </body>
+</html>

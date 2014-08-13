@@ -1,0 +1,24 @@
+{
+  "name": "poc-http-reauthenticate-511",
+  "version": "0.0.0",
+  "description": "Http API Invalidate 511 POC",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "poc",
+    "511",
+    "http",
+    "api"
+  ],
+  "author": "Wil Moore III <wil.moore@wilmoore.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^0.10.0",
+    "koa-body": "^0.2.0",
+    "koa-cors": "0.0.13",
+    "koa-router": "^3.2.3"
+  }
+}
